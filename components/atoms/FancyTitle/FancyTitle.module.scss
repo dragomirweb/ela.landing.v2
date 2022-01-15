@@ -1,6 +1,6 @@
 .box {
   @apply relative flex items-center text-base uppercase py-2;
-
+  @apply -ml-5;
 }
 
 .content {

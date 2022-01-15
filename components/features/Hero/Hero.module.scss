@@ -1,0 +1,28 @@
+.intro {
+  @apply bg-neutral-100;
+  min-height: calc(60vh - var(--header-height));
+}
+
+.heading {
+  @apply text-3xl text-center;
+
+  @screen tablet {
+    @apply text-4xl;
+  }
+
+  @screen laptop {
+    @apply text-5xl;
+  }
+
+  @screen desktop {
+    @apply text-6xl text-left;
+  }
+}
+
+.slogan {
+  @apply text-secondary text-xl text-center;
+
+  @screen desktop {
+    @apply text-2xl text-left;
+  }
+}

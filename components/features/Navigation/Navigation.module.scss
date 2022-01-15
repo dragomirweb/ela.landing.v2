@@ -1,6 +1,7 @@
 .header {
   @apply flex items-center bg-white;
-  @apply h-24 shadow-md z-50;
+  @apply shadow-md z-50;
+  height: var(--header-height);
 }
 
 .sticky {

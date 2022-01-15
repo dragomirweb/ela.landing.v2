@@ -8,6 +8,21 @@ import { links } from '../Desktop/Desktop'
 
 import styles from './Mobile.module.scss'
 
+const sideVariants = {
+  closed: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: -1,
+    },
+  },
+  open: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: 1,
+    },
+  },
+}
+
 const itemVariants = {
   closed: {
     opacity: 0,
@@ -44,20 +59,26 @@ const Mobile: React.FunctionComponent<IMobileProps> = (props) => {
                   <VscChromeClose size="42px" />
                 </button>
               </div>
-              <div className={styles['menu-links']}>
+              <motion.div
+                className={styles['menu-links']}
+                initial="closed"
+                animate="open"
+                variants={sideVariants}
+              >
                 {links.map(({ name, to, id }) => (
                   <Link href={{ hash: to }} passHref key={id}>
                     <motion.a
                       onClick={() => cycleOpen()}
                       className={styles.link}
-                      whileHover={{ x: 0, y: 0, scale: 1.1 }}
+                      whileHover={{ x: 0, y: 0, scale: 1.3 }}
+                      whileTap={{ x: 0, y: 0, scale: 1.3 }}
                       variants={itemVariants}
                     >
                       {name}
                     </motion.a>
                   </Link>
                 ))}
-              </div>
+              </motion.div>
               <div className={styles['menu-footer']}>
                 <SocialLinks size="2rem" />
               </div>
