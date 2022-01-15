@@ -17,14 +17,14 @@ const SocialLinks: React.FunctionComponent<ISocialLinksProps> = ({
             href="https://www.facebook.com/ElaClinic-104786381559677"
             passHref
           >
-            <a className="flex items-center h-full">
+            <a role="facebook page" className="flex items-center h-full">
               <FaFacebookSquare size={size} />
             </a>
           </Link>
         </div>
         <div className="flex h-full">
           <Link href="https://www.instagram.com/elaclinic.ro/" passHref>
-            <a className="flex items-center h-full">
+            <a role="facebook page" className="flex items-center h-full">
               <FaInstagram size={size} />
             </a>
           </Link>
