@@ -1,0 +1,17 @@
+.box {
+  @apply relative flex items-center text-base uppercase py-2;
+
+}
+
+.content {
+  @apply absolute left-5;
+}
+
+.blue {
+  @apply text-white;
+}
+
+.gray,
+.white {
+  @apply text-black;
+}

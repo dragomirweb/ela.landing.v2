@@ -10,6 +10,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .test {
+    padding: 0%;
+  }
 }
 
 .footer {
@@ -19,14 +23,17 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    @apply text-2xl;
+  }
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+
 
 .title a {
   color: #0070f3;

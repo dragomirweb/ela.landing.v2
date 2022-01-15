@@ -1,0 +1,33 @@
+.menu {
+  @apply flex fixed inset-0;
+  z-index: 9999;
+}
+
+
+.menu-header {
+  @apply flex items-center justify-between p-8;
+  @apply text-white;
+}
+
+.menu-links {
+  @apply flex flex-col items-center gap-4 mt-40;
+
+  // transform: translateY(10rem);
+}
+
+.link {
+  @apply text-white text-center text-2xl;
+}
+
+.menu-footer {
+  @apply flex items-center justify-center text-white mt-20;
+
+}
+
+.menu-button {
+  @apply block;
+
+  @screen desktop {
+    @apply hidden;
+  }
+}

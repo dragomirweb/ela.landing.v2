@@ -1,0 +1,21 @@
+.menu {
+  @apply items-center gap-6 h-24 hidden;
+
+  @screen desktop {
+    @apply flex;
+  }
+}
+
+.item {
+  @apply flex items-center h-full;
+  color: #444;
+}
+
+.link {
+  @apply flex items-center h-full transition-all duration-200 ease-in;
+  color: #444;
+
+  &:hover {
+    @apply text-brand;
+  }
+}

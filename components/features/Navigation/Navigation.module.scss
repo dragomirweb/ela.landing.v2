@@ -1,0 +1,14 @@
+.header {
+  @apply flex items-center bg-white;
+  @apply h-24 shadow-md z-50;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+.wrapper {
+  @apply flex items-center justify-between;
+}
