@@ -15,7 +15,7 @@ interface IDesktopProps {}
 
 const Desktop: React.FunctionComponent<IDesktopProps> = (props) => {
   return (
-    <ul role="navigation" className={styles.menu}>
+    <ul aria-label="navigation" className={styles.menu}>
       {links.map(({ name, to, id }) => (
         <li className={styles.item} key={id}>
           <Link href={{ hash: to }}>
