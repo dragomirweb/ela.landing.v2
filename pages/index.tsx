@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import { ElaImage, FancyTitle, Container } from '@atoms'
-import { Navigation, Hero } from '@/features'
+import { Container } from '@atoms'
+import { Navigation, Hero } from '@features'
+import { RegainYourHealth } from '@/features/Sections'
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,9 @@ const Home: NextPage = () => {
       </Head>
       <Navigation />
       <Hero />
+      <main>
+        <RegainYourHealth />
+      </main>
       <Container className="test">
         <div className="mt-96 pt-96" id="programare">
           test
