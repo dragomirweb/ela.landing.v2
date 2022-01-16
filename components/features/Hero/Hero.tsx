@@ -23,7 +23,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
             Programe pentru sănătate și vitalitate prin alimentație
           </p>
           <ElaButton
-            className="self-center desktop:self-start"
+            className="self-center desktop:mt-5 desktop:self-start"
             onClick={programare}
           >
             Programează-te și tu
@@ -31,7 +31,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
         </div>
         <div className="flex flex-col  w-full desktop:w-1/2">
           <ElaImage
-            className="mt-auto mx-auto"
+            className="mt-auto  mx-auto"
             src="/assets/images/drlauraene.webp"
             alt="dr laura ene"
             layout="fixed"
