@@ -43,7 +43,11 @@ const Mobile: React.FunctionComponent<IMobileProps> = (props) => {
 
   return (
     <>
-      <button className={styles['menu-button']} onClick={() => cycleOpen()}>
+      <button
+        aria-label="open menu"
+        className={styles['menu-button']}
+        onClick={() => cycleOpen()}
+      >
         <VscThreeBars size="32px" />
       </button>
       <AnimatePresence>
@@ -55,7 +59,11 @@ const Mobile: React.FunctionComponent<IMobileProps> = (props) => {
             >
               <div className={styles['menu-header']}>
                 <h4 className="text-white text-3xl">Ela Clinic</h4>
-                <button className="pointer" onClick={() => cycleOpen()}>
+                <button
+                  aria-label="close menu"
+                  className="pointer"
+                  onClick={() => cycleOpen()}
+                >
                   <VscChromeClose size="42px" />
                 </button>
               </div>

@@ -31,12 +31,14 @@ const RegainYourHealth: React.FunctionComponent<IRegainYourHealthProps> = (
           <div className={styles['yt-box']}>
             <iframe
               className={styles['responsive-iframe']}
+              title="Dieta pacienților cu afecțiuni caradiovasculare"
               src="https://www.youtube.com/embed/YqKuASBV3-Q"
             ></iframe>
           </div>
           <div className={styles['yt-box']}>
             <iframe
               className={styles['responsive-iframe']}
+              title="Dieta este primul pas în prevenția cardiovasculară"
               src="https://www.youtube.com/embed/PYXq9U57ILc"
             ></iframe>
           </div>
