@@ -10,6 +10,7 @@ body {
   font-size: 16px;
 
   --header-height: 96px;
+  --color-primary: #386eef;
 }
 
 a {

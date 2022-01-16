@@ -14,18 +14,6 @@ const Home: NextPage = () => {
       <Navigation />
       <Hero />
       <Container className="test">
-        <FancyTitle>xxxxxxxxxxxxxxxxx</FancyTitle>
-        <FancyTitle variant="blue">xxxxxxxxxxxxxxxxx</FancyTitle>
-        <div className="bg-orange-400">
-          <FancyTitle variant="white">xxxxxxxxxxxxxxxxx</FancyTitle>
-        </div>
-        <ElaImage
-          src="/assets/images/drlauraene.webp"
-          alt="dr laura ene"
-          width={440}
-          height={558}
-          layout="fixed"
-        />
         <div className="mt-96 pt-96" id="programare">
           test
         </div>
