@@ -12,10 +12,12 @@ const RegainYourHealth: React.FunctionComponent<IRegainYourHealthProps> = (
     <Container className="py-10">
       <div className="flex flex-col gap-2">
         <FancyTitle variant="gray">RECAPATATI SANATATEA</FancyTitle>
+        <Heading tag="h1">Heading 1</Heading>
         <Heading tag="h2">Heading 2</Heading>
         <Heading tag="h3">Heading 3</Heading>
         <Heading tag="h4">Heading 4</Heading>
         <Heading tag="h5">Heading 5</Heading>
+        <Heading tag="h6">Heading 6</Heading>
         <h2 className="text-3xl desktop:text-4xl leading-tight font-semibold pb-5">
           Cum să-ți recapeți sănătatea fără pastile în plus chiar dacă pare
           imposibil

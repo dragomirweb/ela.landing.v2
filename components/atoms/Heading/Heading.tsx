@@ -4,7 +4,7 @@ import Tag from './Tag'
 import styles from './Heading.module.scss'
 
 interface IHeadingProps {
-  tag: 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+  tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
   className?: string
   children: React.ReactNode
 }
