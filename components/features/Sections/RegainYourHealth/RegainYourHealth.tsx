@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Container, FancyTitle, Heading } from '@atoms'
+import { Container, FancyTitle, Heading, Paragraph } from '@atoms'
 import styles from './RegainYourHealth.module.scss'
 
 interface IRegainYourHealthProps {}
@@ -12,27 +12,21 @@ const RegainYourHealth: React.FunctionComponent<IRegainYourHealthProps> = (
     <Container className="py-10">
       <div className="flex flex-col gap-2">
         <FancyTitle variant="gray">RECAPATATI SANATATEA</FancyTitle>
-        <Heading tag="h1">Heading 1</Heading>
-        <Heading tag="h2">Heading 2</Heading>
-        <Heading tag="h3">Heading 3</Heading>
-        <Heading tag="h4">Heading 4</Heading>
-        <Heading tag="h5">Heading 5</Heading>
-        <Heading tag="h6">Heading 6</Heading>
-        <h2 className="text-3xl desktop:text-4xl leading-tight font-semibold pb-5">
+        <Heading tag="h3" className="mb-4">
           Cum să-ți recapeți sănătatea fără pastile în plus chiar dacă pare
           imposibil
-        </h2>
-        <h3 className="">
+        </Heading>
+        <Heading tag="h5">
           Urmează dietele validate științific de protocoalele medicale
           internaționale.
-        </h3>
-        <p className="text-secondary text-base">
+        </Heading>
+        <Paragraph>
           Medicul ți-a spus că degeaba iei pastile dacă nu ții dietă?
-        </p>
-        <p className="text-secondary text-lg desktop:text-xl">
+        </Paragraph>
+        <Paragraph>
           Pe Internet circulă zeci de remedii, suplimente și diete și nu știi ce
           să alegi.
-        </p>
+        </Paragraph>
         <div className="grid grid-cols-1 desktop:grid-cols-2 gap-2 my-7">
           <div className={styles['yt-box']}>
             <iframe
@@ -49,11 +43,34 @@ const RegainYourHealth: React.FunctionComponent<IRegainYourHealthProps> = (
             ></iframe>
           </div>
         </div>
-
-        <p className="text-secondary text-lg desktop:text-xl">
-          Pe Internet circulă zeci de remedii, suplimente și diete și nu știi ce
-          să alegi.
-        </p>
+        <Paragraph>
+          Nu ești singurul. În România, mii de oameni suferă de boli provocate
+          de alimentație: diabet, tensiune, boli de inimă, ficat gras, sindrom
+          de intestin iritabil, cancer. Studiile medicale internaționale au
+          arătat că aceste boli pot fi tratate cu ajutorul unor diete speciale,
+          numite diete terapeutice.
+        </Paragraph>
+        <Paragraph>
+          Dacă și tu te confrunți cu astfel de boli, noi avem soluția pentru
+          tine.
+        </Paragraph>
+        <Paragraph>
+          <strong>Programele Suport ELA CLINIC</strong> sunt concepute astfel
+          încât să te ajute să te simți mai bine și să scapi de o parte din
+          medicamente pentru tot restul vieții.
+        </Paragraph>
+        <Paragraph>
+          Imaginează-ți cum ar fi să iei mai puține medicamente dar cu toate
+          acestea analizele tale să se regleze iar tu să te simți din ce în ce
+          mai bine.
+        </Paragraph>
+        <Paragraph>
+          Timp de 15 ani, Dr. Laura Ene a tratat cu succes peste 15.000 de
+          pacienți cu probleme de sănătate legate de alimentație. Acum a
+          perfecționat acest sistem și l-a transformat într-o clinică de
+          nutriție terapeutică, unde beneficiezi de{' '}
+          <strong>Programe SUPORT</strong> pentru fiecare afecțiune în parte.
+        </Paragraph>
       </div>
     </Container>
   )

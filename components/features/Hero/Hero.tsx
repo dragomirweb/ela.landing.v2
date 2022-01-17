@@ -1,11 +1,9 @@
 import React from 'react'
 
-import { Container, FancyTitle, ElaImage, ElaButton } from '@atoms'
+import { Container, FancyTitle, ElaImage, ElaButton, Heading } from '@atoms'
 import styles from './Hero.module.scss'
 
-interface IHeroProps {}
-
-const Hero: React.FunctionComponent<IHeroProps> = (props) => {
+const Hero: React.FunctionComponent = () => {
   const programare = () => {
     window.location.hash = ''
     window.location.hash = 'programare'
@@ -16,12 +14,15 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
       <Container className="flex flex-col desktop:flex-row pt-10">
         <div className="flex flex-col gap-4 w-full desktop:w-1/2">
           <FancyTitle variant="white"> ELA CLINIC</FancyTitle>
-          <h1 className={styles.heading}>
+          <Heading tag="h1" className="text-center desktop:text-left">
             Prima clinică de nutriție terapeutică
-          </h1>
-          <p className={styles.slogan}>
+          </Heading>
+          <Heading
+            tag="h5"
+            className="text-secondary text-center desktop:text-left"
+          >
             Programe pentru sănătate și vitalitate prin alimentație
-          </p>
+          </Heading>
           <ElaButton
             className="self-center desktop:mt-5 desktop:self-start"
             onClick={programare}

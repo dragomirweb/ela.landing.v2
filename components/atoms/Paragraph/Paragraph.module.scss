@@ -1,0 +1,7 @@
+@import '~rfs/scss';
+
+.p {
+  @apply text-secondary;
+  @include font-size(1.125rem);
+  @include rfs(1.5, line-height);
+}
