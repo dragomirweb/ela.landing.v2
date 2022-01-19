@@ -21,7 +21,7 @@ const ElaImage: React.FunctionComponent<IElaImageProps> = ({
   className = '',
 }) => {
   return (
-    <div className={`flex max-w-full h-auto ${className}`}>
+    <div className={className}>
       <Image
         src={src}
         alt={alt}

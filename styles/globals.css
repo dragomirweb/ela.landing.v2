@@ -13,6 +13,10 @@ body {
   --color-primary: #386eef;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
   text-decoration: none;

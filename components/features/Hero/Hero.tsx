@@ -30,12 +30,11 @@ const Hero: React.FunctionComponent = () => {
             Programează-te și tu
           </ElaButton>
         </div>
-        <div className="flex flex-col  w-full desktop:w-1/2">
+        <div className="flex flex-col items-center w-full desktop:w-1/2">
           <ElaImage
-            className="mt-auto  mx-auto"
             src="/assets/images/drlauraene.webp"
             alt="dr laura ene"
-            layout="fixed"
+            layout="intrinsic"
             width={440}
             height={558}
           ></ElaImage>

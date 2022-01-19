@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import { Container } from '@atoms'
 import { Navigation, Hero } from '@features'
-import { RegainYourHealth } from '@/features/Sections'
+import { RegainYourHealth, Benefits } from '@/features/Sections'
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +16,7 @@ const Home: NextPage = () => {
       <Hero />
       <main>
         <RegainYourHealth />
+        <Benefits />
       </main>
       <Container className="test">
         <div className="mt-96 pt-96" id="programare">

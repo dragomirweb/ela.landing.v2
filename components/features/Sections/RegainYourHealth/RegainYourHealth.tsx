@@ -3,13 +3,9 @@ import * as React from 'react'
 import { Container, FancyTitle, Heading, Paragraph } from '@atoms'
 import styles from './RegainYourHealth.module.scss'
 
-interface IRegainYourHealthProps {}
-
-const RegainYourHealth: React.FunctionComponent<IRegainYourHealthProps> = (
-  props
-) => {
+const RegainYourHealth: React.FunctionComponent = () => {
   return (
-    <Container className="py-10">
+    <Container id="recapata-sanatatea" className="py-10 scroll-mt-24">
       <div className="flex flex-col gap-2">
         <FancyTitle variant="gray">RECAPATATI SANATATEA</FancyTitle>
         <Heading tag="h3" className="mb-4">
@@ -28,20 +24,16 @@ const RegainYourHealth: React.FunctionComponent<IRegainYourHealthProps> = (
           să alegi.
         </Paragraph>
         <div className="grid grid-cols-1 desktop:grid-cols-2 gap-2 my-7">
-          <div className={styles['yt-box']}>
-            <iframe
-              className={styles['responsive-iframe']}
-              title="Dieta pacienților cu afecțiuni caradiovasculare"
-              src="https://www.youtube.com/embed/YqKuASBV3-Q"
-            ></iframe>
-          </div>
-          <div className={styles['yt-box']}>
-            <iframe
-              className={styles['responsive-iframe']}
-              title="Dieta este primul pas în prevenția cardiovasculară"
-              src="https://www.youtube.com/embed/PYXq9U57ILc"
-            ></iframe>
-          </div>
+          <iframe
+            className="w-full aspect-video"
+            title="Dieta pacienților cu afecțiuni caradiovasculare"
+            src="https://www.youtube.com/embed/YqKuASBV3-Q"
+          ></iframe>
+          <iframe
+            className="w-full aspect-video"
+            title="Dieta este primul pas în prevenția cardiovasculară"
+            src="https://www.youtube.com/embed/PYXq9U57ILc"
+          ></iframe>
         </div>
         <Paragraph>
           Nu ești singurul. În România, mii de oameni suferă de boli provocate

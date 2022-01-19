@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import styles from './Paragraph.module.scss'
 
-interface IParagraphProps {
+interface IParagraphProps extends React.HTMLAttributes<HTMLParagraphElement> {
   className?: string
   children: React.ReactNode
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Button.module.scss'
 
-interface ElaButtonProps {
+interface ElaButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   buttonType?: 'button' | 'submit' | 'reset'
   className?: string
   onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined
@@ -15,6 +15,7 @@ const ElaButton: React.FunctionComponent<ElaButtonProps> = ({
   disabled,
   onClick,
   children,
+  ...rest
 }) => {
   return (
     <button
@@ -22,6 +23,7 @@ const ElaButton: React.FunctionComponent<ElaButtonProps> = ({
       className={`${styles.button} ${className}`}
       onClick={onClick}
       disabled={disabled}
+      {...rest}
     >
       {children}
     </button>
