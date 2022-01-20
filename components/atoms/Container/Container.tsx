@@ -1,11 +1,12 @@
 import React from 'react'
+import { FunctionComponent, HTMLAttributes } from 'react'
 
-interface IContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+interface IContainerProps extends HTMLAttributes<HTMLDivElement> {
   className?: string
   children: React.ReactNode
 }
 
-const Container: React.FunctionComponent<IContainerProps> = ({
+const Container: FunctionComponent<IContainerProps> = ({
   className = '',
   children,
   ...rest

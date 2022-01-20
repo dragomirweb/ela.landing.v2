@@ -48,7 +48,18 @@ const Mobile: React.FunctionComponent<IMobileProps> = (props) => {
         className={styles['menu-button']}
         onClick={() => cycleOpen()}
       >
-        <VscThreeBars size="32px" />
+        <svg
+          aria-hidden="true"
+          className="w-7 h-7"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+          ></path>
+        </svg>
       </button>
       <AnimatePresence>
         {open && (
@@ -64,7 +75,18 @@ const Mobile: React.FunctionComponent<IMobileProps> = (props) => {
                   className="pointer"
                   onClick={() => cycleOpen()}
                 >
-                  <VscChromeClose size="42px" />
+                  <svg
+                    aria-hidden="true"
+                    className="w-10 h-10"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                    ></path>
+                  </svg>
                 </button>
               </div>
               <motion.div

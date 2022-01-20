@@ -1,7 +1,6 @@
 import * as React from 'react'
 
 import { Container, FancyTitle, Heading, Paragraph } from '@atoms'
-import styles from './RegainYourHealth.module.scss'
 
 const RegainYourHealth: React.FunctionComponent = () => {
   return (
