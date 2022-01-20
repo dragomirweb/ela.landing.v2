@@ -1,7 +1,6 @@
 import { AnimatePresence, motion, useCycle } from 'framer-motion'
 import Link from 'next/link'
 import { useEffect } from 'react'
-import { VscThreeBars, VscChromeClose } from 'react-icons/vsc'
 
 import SocialLinks from '../SocialLinks/SocialLinks'
 import { links } from '../Desktop/Desktop'
