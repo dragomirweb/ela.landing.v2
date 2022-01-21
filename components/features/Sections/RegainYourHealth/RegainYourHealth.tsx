@@ -5,6 +5,30 @@ import { Container, FancyTitle, Heading, Paragraph } from '@atoms'
 const RegainYourHealth: React.FunctionComponent = () => {
   return (
     <Container id="recapata-sanatatea" className="py-10 scroll-mt-24">
+      <Heading tag="h1" className="">
+        heading 1
+      </Heading>
+      <Heading tag="h2" className="">
+        heading 2
+      </Heading>
+      <Heading tag="h3" className="">
+        heading 3
+      </Heading>
+      <Heading tag="h4" className="">
+        heading 4
+      </Heading>
+      <Heading tag="h5" className="">
+        heading 5
+      </Heading>
+      <Heading tag="h6" className="">
+        heading 6
+      </Heading>
+      <Paragraph>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
+        necessitatibus dolorum. Repellendus blanditiis quam aperiam, ratione
+        voluptates incidunt ab repellat pariatur est, molestias perferendis nemo
+        vitae suscipit illum, at odit!
+      </Paragraph>
       <div className="flex flex-col gap-2">
         <FancyTitle variant="gray">RECAPATATI SANATATEA</FancyTitle>
         <Heading tag="h3" className="mb-4">
