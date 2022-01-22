@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 
 import styles from './Paragraph.module.scss'
 
@@ -11,7 +11,7 @@ const Paragraph: React.FunctionComponent<IParagraphProps> = ({
   className = '',
   children,
 }) => {
-  return <p className={`${className} ${styles.p}`}>{children}</p>
+  return <p className={`${styles.p} ${className}`}>{children}</p>
 }
 
 export default Paragraph

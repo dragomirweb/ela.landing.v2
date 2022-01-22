@@ -1,5 +1,5 @@
 .box {
-  @apply relative flex items-center text-base uppercase py-2;
+  @apply relative flex items-center text-base uppercase py-2 mb-2 laptop:mb-5;
 
   @screen desktop {
     @apply -ml-5;

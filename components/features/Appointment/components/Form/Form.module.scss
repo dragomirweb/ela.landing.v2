@@ -1,0 +1,52 @@
+.input {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.input.hasError,
+.select.hasError {
+  border-color: #ff3838 !important;
+  box-shadow: 0 0 4px 0 #ff3838 !important;
+}
+
+.input:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 4px 0 dodgerBlue;
+}
+
+.select {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.textarea {
+  resize: none;
+}
+
+.textarea:disabled,
+.select:disabled,
+.input:disabled {
+  background-color: white;
+  opacity: 0.65;
+}
+
+.error {
+  height: 14px;
+  color: red;
+  font-size: 12px;
+  margin-top: 6px;
+  text-align: end;
+}

@@ -3,9 +3,10 @@
   @apply text-white bg-brand-500;
   width: max-content;
   background-color: var(--color-primary);
+  @apply outline-none;
 
   &:hover,
   &:active {
-    @apply bg-brand-600;
+    @apply bg-brand-600 rounded-full;
   }
 }

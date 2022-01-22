@@ -1,91 +1,79 @@
-import * as React from 'react'
+import React from 'react'
 
-import { Container, FancyTitle, Heading, Paragraph } from '@atoms'
+import {
+  Container,
+  ElaButton,
+  ElaImage,
+  FancyTitle,
+  Heading,
+  Paragraph,
+} from '@atoms'
 
 const RegainYourHealth: React.FunctionComponent = () => {
   return (
-    <Container id="recapata-sanatatea" className="py-10 scroll-mt-24">
-      <Heading tag="h1" className="">
-        heading 1
-      </Heading>
-      <Heading tag="h2" className="">
-        heading 2
-      </Heading>
-      <Heading tag="h3" className="">
-        heading 3
-      </Heading>
-      <Heading tag="h4" className="">
-        heading 4
-      </Heading>
-      <Heading tag="h5" className="">
-        heading 5
-      </Heading>
-      <Heading tag="h6" className="">
-        heading 6
-      </Heading>
-      <Paragraph>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-        necessitatibus dolorum. Repellendus blanditiis quam aperiam, ratione
-        voluptates incidunt ab repellat pariatur est, molestias perferendis nemo
-        vitae suscipit illum, at odit!
-      </Paragraph>
+    <Container
+      id="recapata-sanatatea"
+      className="py-10 desktop:py-20 scroll-mt-24"
+    >
       <div className="flex flex-col gap-2">
         <FancyTitle variant="gray">RECAPATATI SANATATEA</FancyTitle>
-        <Heading tag="h3" className="mb-4">
-          Cum să-ți recapeți sănătatea fără pastile în plus chiar dacă pare
-          imposibil
+        <Heading tag="h3" className="mb-10 text-center">
+          50% din populație va fi obeză sau supraponderală până în 2030
         </Heading>
-        <Heading tag="h5">
-          Urmează dietele validate științific de protocoalele medicale
-          internaționale.
-        </Heading>
-        <Paragraph>
-          Medicul ți-a spus că degeaba iei pastile dacă nu ții dietă?
-        </Paragraph>
-        <Paragraph>
-          Pe Internet circulă zeci de remedii, suplimente și diete și nu știi ce
-          să alegi.
-        </Paragraph>
-        <div className="grid grid-cols-1 desktop:grid-cols-2 gap-2 my-7">
-          <iframe
-            className="w-full aspect-video"
-            title="Dieta pacienților cu afecțiuni caradiovasculare"
-            src="https://www.youtube.com/embed/YqKuASBV3-Q"
-          ></iframe>
-          <iframe
-            className="w-full aspect-video"
-            title="Dieta este primul pas în prevenția cardiovasculară"
-            src="https://www.youtube.com/embed/PYXq9U57ILc"
-          ></iframe>
+
+        <div className="grid gap-5 tablet:grid-cols-2  desktop:grid-cols-3">
+          <div className="flex flex-col items-center ">
+            <ElaImage
+              className="flex "
+              src="/assets/images/obez.webp"
+              alt="obezitate"
+              layout="intrinsic"
+              width={150}
+              height={150}
+            ></ElaImage>
+            <Heading tag="h5" className="grow py-4 text-center">
+              Trăim într-un mediu obezogen, care ne influențează alegerile.
+            </Heading>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <ElaImage
+              className="flex "
+              src="/assets/images/smartphone.webp"
+              alt="obezitate"
+              layout="intrinsic"
+              width={150}
+              height={150}
+            ></ElaImage>
+            <Heading tag="h5" className="grow py-4 text-center">
+              Suntem înconjurați de mâncare și aceasta este din ce în ce mai
+              accesibilă.
+            </Heading>
+          </div>
+          <div className="flex flex-col items-center justify-center tablet:col-span-2 desktop:col-span-1">
+            <ElaImage
+              className="flex "
+              src="/assets/images/fastfood.webp"
+              alt="obezitate"
+              layout="intrinsic"
+              width={150}
+              height={150}
+            ></ElaImage>
+            <Heading tag="h5" className="grow py-4 text-center">
+              Consumăm tot mai multă mâncare procesată.
+            </Heading>
+          </div>
         </div>
-        <Paragraph>
-          Nu ești singurul. În România, mii de oameni suferă de boli provocate
-          de alimentație: diabet, tensiune, boli de inimă, ficat gras, sindrom
-          de intestin iritabil, cancer. Studiile medicale internaționale au
-          arătat că aceste boli pot fi tratate cu ajutorul unor diete speciale,
-          numite diete terapeutice.
-        </Paragraph>
-        <Paragraph>
-          Dacă și tu te confrunți cu astfel de boli, noi avem soluția pentru
-          tine.
-        </Paragraph>
-        <Paragraph>
-          <strong>Programele Suport ELA CLINIC</strong> sunt concepute astfel
-          încât să te ajute să te simți mai bine și să scapi de o parte din
-          medicamente pentru tot restul vieții.
-        </Paragraph>
-        <Paragraph>
-          Imaginează-ți cum ar fi să iei mai puține medicamente dar cu toate
-          acestea analizele tale să se regleze iar tu să te simți din ce în ce
-          mai bine.
-        </Paragraph>
-        <Paragraph>
-          Timp de 15 ani, Dr. Laura Ene a tratat cu succes peste 15.000 de
-          pacienți cu probleme de sănătate legate de alimentație. Acum a
-          perfecționat acest sistem și l-a transformat într-o clinică de
-          nutriție terapeutică, unde beneficiezi de{' '}
-          <strong>Programe SUPORT</strong> pentru fiecare afecțiune în parte.
-        </Paragraph>
+        <div className="flex items-center justify-center py-10">
+          <ElaButton
+            className="text-2xl"
+            onClick={() => {
+              window.location.hash = ''
+              window.location.hash = 'programare'
+            }}
+          >
+            Intră în programul SILUETA DE 10!
+          </ElaButton>
+        </div>
       </div>
     </Container>
   )

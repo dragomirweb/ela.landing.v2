@@ -10,11 +10,13 @@ enum FancyTitleType {
 
 interface IFancyTitleProps {
   variant?: 'gray' | 'blue' | 'white'
+  className?: string
 }
 
 const FancyTitle: React.FunctionComponent<IFancyTitleProps> = ({
   variant = 'gray',
   children,
+  className = '',
 }) => {
   return (
     <div className={`${styles.box} ${styles[variant]}`}>

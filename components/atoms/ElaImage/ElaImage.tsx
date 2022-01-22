@@ -15,8 +15,8 @@ const ElaImage: React.FunctionComponent<IElaImageProps> = ({
   src,
   alt,
   layout = 'responsive',
-  width = 100,
-  height = 100,
+  width = undefined,
+  height = undefined,
   priority = true,
   className = '',
 }) => {
