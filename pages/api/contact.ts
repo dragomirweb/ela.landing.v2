@@ -9,7 +9,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const transporter = nodemailer.createTransport({
     port: 465,
-    host: 'mail.dragomirweb.ro',
+    host: process.env.EMAIL_HOST,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.EMAIL_PSW,
@@ -39,9 +39,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const mail = {
     from: '"ElaClinic" <test@dragomirweb.ro>',
-    to: 'dan@dragomirweb.com',
+    to: process.env.EMAIL_TO,
     replyTo: `"${prenume} ${nume}" <${email}>`,
-    subject: `Programare ElaClinic ${prenume} ${nume}`,
+    subject: `Programare Silueta Perfecta pentru ${prenume} ${nume}`,
     text: textFormat,
     html: htmlFormat,
   }
