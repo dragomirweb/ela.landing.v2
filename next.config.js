@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    outputStandalone: true,
+  },
   reactStrictMode: true,
   i18n: {
     locales: ['ro'],
