@@ -16,7 +16,9 @@ const RegainYourHealth: React.FunctionComponent = () => {
       className="py-10 desktop:py-20 scroll-mt-24"
     >
       <div className="flex flex-col gap-2">
-        <FancyTitle variant="gray">RECAPATA-ȚI SILUETA</FancyTitle>
+        <FancyTitle className="uppercase" variant="gray">
+          RECAPăTă-ȚI SILUETA
+        </FancyTitle>
       </div>
       <div className="flex flex-col">
         <Heading tag="h3" className="mb-10">
@@ -64,8 +66,7 @@ const RegainYourHealth: React.FunctionComponent = () => {
           </li>
           <li>
             Afli soluții practice - rețete, mod de preparare, idei de asociere a
-            alimentelor Înveți cum să-ți organizezi mesele în funcție de
-            programul tău zilnic
+            alimentelor.
           </li>
           <li>
             Înveți cum să-ți organizezi mesele în funcție de programul tău

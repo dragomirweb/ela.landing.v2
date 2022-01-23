@@ -42,7 +42,7 @@ const Benefits: React.FunctionComponent<IBenefitsProps> = (props) => {
             <div className="flex flex-col items-center justify-center">
               <ElaImage
                 className="flex "
-                src="/assets/images/smartphone.webp"
+                src="/assets/images/fastfood.webp"
                 alt="obezitate"
                 layout="intrinsic"
                 width={150}
@@ -61,7 +61,7 @@ const Benefits: React.FunctionComponent<IBenefitsProps> = (props) => {
             <div className="flex flex-col items-center justify-center tablet:col-span-2 desktop:col-span-1">
               <ElaImage
                 className="flex "
-                src="/assets/images/fastfood.webp"
+                src="/assets/images/smartphone.webp"
                 alt="obezitate"
                 layout="intrinsic"
                 width={150}
