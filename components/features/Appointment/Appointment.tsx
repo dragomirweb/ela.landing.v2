@@ -15,7 +15,7 @@ const Appointment: React.FunctionComponent<IAppointmentProps> = (props) => {
         </Heading>
 
         <div className="grid grid-cols-1 desktop:grid-cols-2 gap-2 bg-neutral-200 rounded-3xl overflow-hidden">
-          <div className="flex flex-col px-10 tablet:px-16 py-10">
+          <div className="flex flex-col px-5 tablet:px-16 py-10">
             <FancyTitle variant="gray">PROGRAMARE</FancyTitle>
             <p className="mb-5 leading-tight">
               Completează formularul de mai jos și un consultant ELA CLINIC te

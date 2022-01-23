@@ -12,68 +12,93 @@ import {
 const RegainYourHealth: React.FunctionComponent = () => {
   return (
     <Container
-      id="recapata-sanatatea"
+      id="recapata-silueta"
       className="py-10 desktop:py-20 scroll-mt-24"
     >
       <div className="flex flex-col gap-2">
-        <FancyTitle variant="gray">RECAPATATI SANATATEA</FancyTitle>
-        <Heading tag="h3" className="mb-10 text-center">
-          50% din populație va fi obeză sau supraponderală până în 2030
+        <FancyTitle variant="gray">RECAPATA-ȚI SILUETA</FancyTitle>
+      </div>
+      <div className="flex flex-col">
+        <Heading tag="h3" className="mb-10">
+          Ce conține programul{' '}
+          <strong className="text-brand-500">SILUETA DE 10</strong>
+        </Heading>
+        <Heading className="my-5" tag="h5">
+          1 consultație de evaluare inițială cu medicul coordonator al
+          programului în care
         </Heading>
 
-        <div className="grid gap-5 tablet:grid-cols-2  desktop:grid-cols-3">
-          <div className="flex flex-col items-center ">
-            <ElaImage
-              className="flex "
-              src="/assets/images/obez.webp"
-              alt="obezitate"
-              layout="intrinsic"
-              width={150}
-              height={150}
-            ></ElaImage>
-            <Heading tag="h5" className="grow py-4 text-center">
-              Trăim într-un mediu obezogen, care ne influențează alegerile.
-            </Heading>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <ElaImage
-              className="flex "
-              src="/assets/images/smartphone.webp"
-              alt="obezitate"
-              layout="intrinsic"
-              width={150}
-              height={150}
-            ></ElaImage>
-            <Heading tag="h5" className="grow py-4 text-center">
-              Suntem înconjurați de mâncare și aceasta este din ce în ce mai
-              accesibilă.
-            </Heading>
-          </div>
-          <div className="flex flex-col items-center justify-center tablet:col-span-2 desktop:col-span-1">
-            <ElaImage
-              className="flex "
-              src="/assets/images/fastfood.webp"
-              alt="obezitate"
-              layout="intrinsic"
-              width={150}
-              height={150}
-            ></ElaImage>
-            <Heading tag="h5" className="grow py-4 text-center">
-              Consumăm tot mai multă mâncare procesată.
-            </Heading>
-          </div>
-        </div>
-        <div className="flex items-center justify-center py-10">
-          <ElaButton
-            className="text-2xl"
-            onClick={() => {
-              window.location.hash = ''
-              window.location.hash = 'programare'
-            }}
-          >
-            Intră în programul SILUETA DE 10!
-          </ElaButton>
-        </div>
+        <ul className="list-disc list-inside desktop:pl-4 text-lg leading-snug text-secondary ">
+          <li>
+            <span>
+              Înțelegi principiile și regulile dietei înainte de a o urma
+            </span>
+          </li>
+          <li>
+            <span>
+              Afli care sunt arderile corpului tău în repaus și cum le poți
+              îmbunătăți
+            </span>
+          </li>
+          <li>
+            <span>
+              Realizezi câte calorii trebuie să mănânci ca să reușești să
+              slăbești și să te menții
+            </span>
+          </li>
+        </ul>
+
+        <Heading className="my-5" tag="h5">
+          5 ședințe de consiliere nutrițională cu un tehnician nutriționist
+          specializat în managementul greutății, în care
+        </Heading>
+
+        <ul className="list-disc list-inside desktop:pl-4 text-lg leading-snug text-secondary">
+          <li>
+            Primești meniuri clare, adaptate fiecărei săptămâni de dietă în
+            parte
+          </li>
+          <li>
+            Ai mereu o lista de cumpărături bine stabilită, astfel încât să te
+            organizezi eficient
+          </li>
+          <li>
+            Afli soluții practice - rețete, mod de preparare, idei de asociere a
+            alimentelor Înveți cum să-ți organizezi mesele în funcție de
+            programul tău zilnic
+          </li>
+          <li>
+            Înveți cum să-ți organizezi mesele în funcție de programul tău
+            zilnic
+          </li>
+          <li>
+            Ai parte de monitorizare, îndrumare și motivare permanentă pentru a
+            reuși
+          </li>
+        </ul>
+
+        <Heading className="my-5" tag="h5">
+          5 Ateliere de coaching de grup, în care
+        </Heading>
+
+        <ul className="list-disc list-inside desktop:pl-4 text-lg leading-snug text-secondary">
+          <li>
+            Afli cum să-ți păstrezi motivația pe tot parcursul procesului de
+            slăbit și menținere
+          </li>
+          <li>
+            Înveți să-ți gestionezi mai bine timpul și să te organizezi eficient
+          </li>
+          <li>Afli metode simple și eficiente de gestionare a stresului</li>
+          <li>
+            Te împrietenești cu emoțiile tale și înveți să le controlezi altfel
+            decât prin mâncare
+          </li>
+          <li>
+            Înțelegi care sunt mecanismele din spatele poftelor alimentare și
+            cum le faci față
+          </li>
+        </ul>
       </div>
     </Container>
   )

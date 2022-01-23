@@ -5,10 +5,10 @@ import SocialLinks from '../SocialLinks/SocialLinks'
 import styles from './Desktop.module.scss'
 
 export const links = [
-  { name: 'Cum să-ți recapeți sănătatea', to: '#recapata-sanatatea', id: 1 },
-  { name: 'Beneficii', to: '#beneficii', id: 2 },
-  { name: 'Pașii programului', to: '#pasi', id: 3 },
-  { name: 'Programare', to: '#programare', id: 4 },
+  { name: 'Recapata-ți silueta'.toUpperCase(), to: '#recapata-silueta', id: 1 },
+  { name: 'Beneficii'.toUpperCase(), to: '#beneficii', id: 2 },
+  { name: 'Pașii programului'.toUpperCase(), to: '#pasi', id: 3 },
+  { name: 'Programare'.toUpperCase(), to: '#programare', id: 4 },
 ]
 
 interface IDesktopProps {}

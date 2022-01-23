@@ -22,7 +22,7 @@ const Steps: React.FunctionComponent = () => {
           <div className="flex flex-col gap-2">
             <Paragraph>
               Pentru a te înscrie în program tot ce ai de făcut este să
-              completezi formularul de mai jos. Un consultant ELA CLINIC te va
+              completezi formularul de la final. Un consultant ELA CLINIC te va
               contacta în cel mult 48 de ore pentru a stabili data primei
               programări.
             </Paragraph>
@@ -39,16 +39,16 @@ const Steps: React.FunctionComponent = () => {
           <div className="flex flex-col gap-2">
             <Paragraph>
               Te prezinți în clinică la data și ora programării, unde susții
-              prima consultație cu medicul supervizor. Acesta îți va evalua
-              starea de sănătate și va decide dacă vei fi sau nu acceptat în
-              program.
+              prima consultație cu medicul coordonator. Acesta îți va evalua
+              starea de sănătate, îți va prezenta structura și regulile dietei
+              și va decide dacă ți se potrivește acest program.
             </Paragraph>
             <Paragraph>
-              Ca să fii admis în program trebuie să fii într-o stare de sănătate
-              optimă. Pentru a fi sigur de acest lucru, te rugăm să aduci la
-              prima consultație lista cu ultimele analize de sânge, nu mai vechi
-              de 3 luni. Dacă nu ai analize recente, descarcă de mai jos lista
-              cu cele recomandate.
+              Ca să fii admis în acest program trebuie să fii într-o stare de
+              sănătate optimă. Pentru a fi sigur de acest lucru, te rugăm să
+              aduci la prima consultație lista cu ultimele analize de sânge, nu
+              mai vechi de 3 luni. Dacă nu ai analize recente, descarcă de mai
+              jos lista cu cele recomandate.
             </Paragraph>
             <a
               href="/assets/files/Analize Ela Clinic.pdf"
@@ -80,15 +80,17 @@ const Steps: React.FunctionComponent = () => {
 
         <Step
           step="Pasul 3"
-          heading="Consultațiile de nutriție și atelierele de coaching"
+          heading="Consilierea nutrițională și atelierele de coaching"
           imgPath="/assets/images/consultatii_coaching.webp"
           alt="Analiza compozitiei corporale"
           align="left"
         >
           <div className="flex flex-col gap-2">
             <Paragraph>
-              Ulterior, vei avea întâlniri la 2 săptămâni cu nutriționistul și
-              tot la 2 săptămâni ateliere de coaching.
+              Timp de 10 săptămâni vei avea parte de monitorizare, îndrumare și
+              suport săptămânal prin întâlniri cu nutriționistul tău specializat
+              în managementul greutății și ateliere de coaching de grup, astfel
+              încât să reușești ce ți-ai propus.
             </Paragraph>
           </div>
         </Step>
@@ -101,7 +103,24 @@ const Steps: React.FunctionComponent = () => {
           align="right"
         >
           <div className="flex flex-col gap-2">
-            <Paragraph>Felicitări! Ești cu 10 kg mai slab.</Paragraph>
+            <Heading className="my-5" tag="h5">
+              Felicitări! Cântărești cu 10 kg mai puțin. Cum continui?
+            </Heading>
+
+            <ul className="list-disc list-inside desktop:pl-4 text-lg leading-snug text-secondary ">
+              <li>
+                <span>
+                  Poți relua programul de 10 săptămâni, dacă ai nevoie să
+                  slăbești în continuare
+                </span>
+              </li>
+              <li>
+                <span>
+                  Poți opta pentru un program de menținere a greutății
+                  (RECOMANDAT).
+                </span>
+              </li>
+            </ul>
           </div>
         </Step>
       </div>
