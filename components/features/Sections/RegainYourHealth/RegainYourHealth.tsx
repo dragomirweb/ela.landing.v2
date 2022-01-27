@@ -106,7 +106,7 @@ const RegainYourHealth: React.FunctionComponent = () => {
           1750 lei*
         </Heading>
         <p className="text-secondary italic">
-          *În cazul în care nu vei fi acceptat în acest program, vei plăti doar
+          *În cazul în care nu te vei încadra în acest program, vei plăti doar
           prima consultație, în valoare de 250 lei si vei primi recomandarea
           pentru programul ELA CLINIC potrivit pentru tine
         </p>
