@@ -38,7 +38,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   )
 
   const mail = {
-    from: '"ElaClinic" <test@dragomirweb.ro>',
+    from: '"ElaClinic" <no-reply@elaclinic.ro>',
     to: process.env.EMAIL_TO,
     replyTo: `"${prenume} ${nume}" <${email}>`,
     subject: `Programare Silueta Perfecta pentru ${prenume} ${nume}`,
