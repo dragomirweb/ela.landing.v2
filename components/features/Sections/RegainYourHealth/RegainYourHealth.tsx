@@ -57,8 +57,7 @@ const RegainYourHealth: React.FunctionComponent = () => {
           </li>
           <li>
             <span>
-              Identifici care sunt tiparele de comportament a alimentare la care
-              trebuie să lucrezi
+              Identifici care sunt tiparele de comportament alimentar care te sabotează
             </span>
           </li>
         </ul>
