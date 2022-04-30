@@ -33,10 +33,10 @@ const Benefits: React.FunctionComponent<IBenefitsProps> = (props) => {
                 className="text-center text-xl first-letter:text-3xl 
                 first-letter:font-black text-secondary grow mt-5"
               >
-                Cu toții trăim într-un mediu obezogen, care ne influențează
+                Cu toții trăim într-un mediu obezogen care ne influențează
                 alegerile alimentare. Noi te ajutăm să înțelegi ce se întâmplă
-                cu corpul și metabolismul tău în cadrul unei diete. Tu înveți să
-                faci alegerile potrivite pentru silueta și sănătatea ta
+                cu corpul tău în cadrul unei diete.Tu înveți să faci alegerile
+                potrivite pentru silueta și sănătatea ta
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -68,23 +68,25 @@ const Benefits: React.FunctionComponent<IBenefitsProps> = (props) => {
                 height={150}
               ></ElaImage>
               <p className="text-center text-xl first-letter:text-3xl first-letter:font-black text-secondary grow mt-5">
-                Cu toții trăim un stil de viață alert, stresant, în care cu greu
-                ne mai găsim timp și pentru noi. Noi te ajutăm cu soluții
-                practice – meniuri, rețete, idei de asociere a alimentelor. Tu
-                înveți să-ți gestionezi mai bine timpul, emoțiile și stresul.
+                Cu toții trăim un stil de viață alert în care cu greu ne mai
+                găsim timp și pentru noi. Noi te ajutăm cu soluții practice –
+                meniuri, rețete, idei de asociere a alimentelor. Tu înveți să-ți
+                gestionezi mai bine timpul, emoțiile și stresul.
               </p>
             </div>
           </div>
           <div className="flex items-center justify-center py-10">
-            <ElaButton
-              className="text-2xl"
-              onClick={() => {
-                window.location.hash = ''
-                window.location.hash = 'programare'
-              }}
-            >
-              Intră în programul SILUETA DE 10!
-            </ElaButton>
+            <div className="mt-6">
+              <a
+                onClick={() => {
+                  window.location.hash = ''
+                  window.location.hash = 'programare'
+                }}
+                className="cursor-pointer inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-brand-500 hover:bg-brand-600"
+              >
+                Intră în programul SILUETA DE 10!
+              </a>
+            </div>
           </div>
         </div>
       </Container>

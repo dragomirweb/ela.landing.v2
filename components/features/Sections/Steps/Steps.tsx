@@ -31,7 +31,7 @@ const Steps: React.FunctionComponent = () => {
         <hr className="my-10" />
         <Step
           step="Pasul 2"
-          heading="Consultația medicală"
+          heading="Consultația medicală de evaluare inițială"
           imgPath="/assets/images/consultatia_medicala.webp"
           alt="Analiza compozitiei corporale"
           align="right"
@@ -80,7 +80,7 @@ const Steps: React.FunctionComponent = () => {
 
         <Step
           step="Pasul 3"
-          heading="Consilierea nutrițională și atelierele de coaching"
+          heading="Consilierea nutrițională și lecțiile audio-video de Lifestyle Coaching și Psihonutriție"
           imgPath="/assets/images/consultatii_coaching.webp"
           alt="Analiza compozitiei corporale"
           align="left"
@@ -89,8 +89,17 @@ const Steps: React.FunctionComponent = () => {
             <Paragraph>
               Timp de 10 săptămâni vei avea parte de monitorizare, îndrumare și
               suport săptămânal prin întâlniri cu nutriționistul tău specializat
-              în managementul greutății și ateliere de coaching de grup, astfel
-              încât să reușești ce ți-ai propus.
+              în managementul greutății.
+            </Paragraph>
+            <Paragraph>
+              Lecțiile audio-video de Lifestyle Coaching și Psihonutriție te vor
+              ajuta să să înțelegi mai bine mecanismele emoționale și
+              comportamentale care conduc la acumularea kilogramelor în plus
+              nedorite
+            </Paragraph>{' '}
+            <Paragraph>
+              Înveți să devii magicianul siluetei tale și să-ți recapeți
+              controlul asupra corpului tău
             </Paragraph>
           </div>
         </Step>
@@ -110,10 +119,16 @@ const Steps: React.FunctionComponent = () => {
             <ul className="list-disc list-inside desktop:pl-4 text-lg leading-snug text-secondary ">
               <li>
                 <span>
+                  Stabilești acest lucru împreună cu medicul coordonator al
+                  programului
+                </span>
+              </li>
+              <li>
+                <span>
                   Poți relua programul de 10 săptămâni, dacă ai nevoie să
                   slăbești în continuare
                 </span>
-              </li>
+              </li>{' '}
               <li>
                 <span>
                   Poți opta pentru un program de menținere a greutății
