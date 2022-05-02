@@ -16,7 +16,12 @@ export default function ImageText({
   return (
     <div className="max-w-7xl mx-auto py-8">
       <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-        <div className={classNames('space-y-4', right && 'order-last')}>
+        <div
+          className={classNames(
+            'flex justify-center space-y-4',
+            right && 'order-last'
+          )}
+        >
           <Image
             src={image}
             alt="test"
